@@ -6,14 +6,15 @@ namespace OOP03_ASSIGNMENT
 {
     public class ExpressShipment : Shipment
     {
+        private decimal extera_fee;
         public decimal ExtraFee
         {
-            get { return ExtraFee; }
+            get { return extera_fee; }
             set
             {
-                if (ExtraFee >= 0)
+                if (extera_fee >= 0)
                 {
-                    ExtraFee = value;
+                    extera_fee = value;
                 }
             }
         }
@@ -38,8 +39,7 @@ namespace OOP03_ASSIGNMENT
         public ExpressShipment() { }
         public ExpressShipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination, decimal fee) : base(trackingCode, description, weight, deliveryFee, destination)
         {
-            Destination = destination;
-            this.ExtraFee = ExtraFee;
+            this.ExtraFee = fee;
         }
 
     }

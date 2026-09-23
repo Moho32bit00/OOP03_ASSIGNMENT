@@ -6,5 +6,6 @@ namespace OOP03_ASSIGNMENT
 {
     public sealed class CompletedShipment : Shipment 
     {
+
     }
 }

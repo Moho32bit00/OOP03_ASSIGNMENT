@@ -8,25 +8,13 @@ namespace OOP03_ASSIGNMENT
     {
         public string DestinationCountry
         {
-            get { return DestinationCountry; }
-            set
-            {
-                if (DestinationCountry != null || DestinationCountry != "" || DestinationCountry != " ")
-                {
-                    DestinationCountry = value;
-                }
-            }
+            get;
+            set;
         }
         public decimal CustomsFee
         {
-            get { return CustomsFee; }
-            set
-            {
-                if (CustomsFee >= 0)
-                {
-                    CustomsFee = value;
-                }
-            }
+            get;
+            set;
 
         }
 
